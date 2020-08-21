@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {decrementCounter, incrementCounter} from '../redux/actions/counterActions';
+import Router, { withRouter } from "next/router";
+import Button from '../components/Button'
+import LogRocket from "logrocket";
+
+
+class Container extends React.PureComponent {
+    componentDidMount() {
+        const { route } = this.props.router;
+
+        if (route === "/") {
+            Router.push("/MainMenu");
+        }
+    }
+    render() {
+        return (
+            <h1>loading</h1>
+        );
+    }
+
+}
+export default connect(withRouter)(Container);
+
+

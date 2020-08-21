@@ -1,5 +1,6 @@
 .counterButton {
-    padding: 80px;
+    padding: '80px';
     color:blue;
     background-color:red;
+    border: '2px', solid, black;
 }

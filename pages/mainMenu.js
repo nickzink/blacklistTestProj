@@ -1,8 +1,12 @@
 import React from "react";
-import MainMenu from "../views/MainMenu";
+import MainMenu from "../components/MainMenu";
+import { withRouter } from 'next/router';
 
-export default () => (
-  <MainMenu>
-    {/* <CheckMail /> */}
-  </MainMenu>
-);
+
+class menu extends React.Component {
+  render() {
+    return <MainMenu />;
+  }
+}
+export default withRouter(menu);
+

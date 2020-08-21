@@ -1,18 +1,19 @@
 import React from "react";
-// import './styles.less';
+import { Button } from 'antd';
 
-const Button = ({
-    onClick,
-    text
-}) => {
-    return (
-        <Button 
-            onClick={onClick} 
-            className="Button">
-                {text}
-        </Button>
-    );
-    
+
+class counterButton extends React.Component {
+    render() {
+        return (
+            <div>
+                <Button
+                     onClick={this.props.onClick} 
+                     className={this.props.className}>
+                         {this.props.text}
+                </Button>
+            </div>
+        );
+    }
 }
+export default counterButton;
 
-export default Button;

@@ -1,7 +1,9 @@
 import App from 'next/app'
 import React from 'react';
 import {wrapper} from '../redux/store';
-// import Router from "next/router";
+import Router from "next/router";
+import '../styles.css';
+
 
 
 class MyApp extends App {
@@ -23,7 +25,6 @@ class MyApp extends App {
 
     render() {
         const {Component, pageProps} = this.props;
-        console.log(pageProps);
         return (
             <Component {...pageProps} />
         );
