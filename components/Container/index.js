@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Router, { withRouter } from "next/router";
-import MainMenu from '../MainMenu';
 
 
 
@@ -14,16 +13,18 @@ class Container extends React.PureComponent {
     componentDidMount() {
 
         if (this.router.route === "/") {
-            this.router.push("/mainMenu")
+            this.router.push("/mainPage")
         }
         else {
             //error
         }
     }
     render() {
-        return(
-            <h1>loading</h1>
-        );
+        return (
+            <div className="loadingScreen">
+              <h1>Loading</h1>
+            </div>
+          );
     }
     // goToPath = (path) => {
     //     this.router.push("/" + path);

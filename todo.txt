@@ -1,0 +1,17 @@
+
+look into less mostly, and scss
+
+basic html and css review
+(div and span)
+especially site layout
+structuring html important
+flex css
+Top nav bar with logo(left) and page nav
+
+layout has all static components (navbar/sidebar/footer)
+
+start making components that could be useful such as sliders, dropdown, searchbar, sleek buttons
+
+How to add img?
+
+less font-family not working

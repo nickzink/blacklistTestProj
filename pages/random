@@ -11,7 +11,7 @@ class Container extends React.PureComponent {
         const { route } = this.props.router;
 
         if (route === "/") {
-            Router.push("/MainMenu");
+            Router.push("/mainPage");
         }
     }
     render() {

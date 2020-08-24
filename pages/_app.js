@@ -2,7 +2,9 @@ import App from 'next/app'
 import React from 'react';
 import {wrapper} from '../redux/store';
 import Router from "next/router";
-import '../styles.css';
+import '../styles/blacklist-theme.less';
+import 'antd/dist/antd.css';
+
 
 
 

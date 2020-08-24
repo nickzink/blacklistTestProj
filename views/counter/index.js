@@ -3,12 +3,11 @@ import {connect} from 'react-redux';
 import { compose } from "redux";
 import {decrementCounter, incrementCounter} from '../../redux/actions/counterActions';
 import Button from '../../components/Button';
-import counterButton from '../../components/Button';
 import { withRouter } from "next/router";
 
 
 
-class Counter extends React.Component {
+class CounterView extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -17,8 +16,8 @@ class Counter extends React.Component {
         
     }
 
-    goToMainMenu = () => {
-        this.props.router.push("/mainMenu");
+    goToMainPage = () => {
+        this.props.router.push("/mainPage");
     };
 
     render() {
@@ -32,14 +31,13 @@ class Counter extends React.Component {
                 <Button
                      onClick={this.props.decrementCounter} 
                      className={'counterButton'}
-                     text={"Decrement"}>
-                         
+                     text={'Decrement'}>
                 </Button>
 
-                <h1>{this.props.counter}</h1>
+                <h1 className="countNumber">{this.props.counter}</h1>
 
                 <Button
-                     onClick={this.goToMainMenu} 
+                     onClick={this.goToMainPage} 
                      className={'counterButton'}
                      text={"Back to menu"}>
                 </Button>
@@ -69,6 +67,6 @@ export default compose(
       mapStateToProps,
       mapDispatchToProps
     )
-  )(Counter);
+  )(CounterView);
 
 
