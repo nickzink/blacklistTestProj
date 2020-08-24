@@ -25,7 +25,7 @@ class navBar extends React.Component {
         this.props.router.push("/testComponents");
     }
     goToGetStarted = () => {
-        this.props.router.push("/getStarted");
+        this.props.router.push("/preGetStarted");
     }
     
     goToPath = (path) => {
@@ -35,43 +35,46 @@ class navBar extends React.Component {
     render() {
         return (
             <div id='navbar'>
-                <div id='logoContainer'>
-                    <Logo onClick={this.goToMainPage}/>
+                <div id='actualNavBar'>
+                    <div id='logoContainer'>
+                        <Logo onClick={this.goToMainPage}/>
+                    </div>
+                    <nav id='navLinks'>
+
+                        <button
+                        onClick={this.goToGetStarted} 
+                        className={'navBarButton getStartedButton'}>
+                        Get Started
+                        </button>
+
+                        <button
+                        onClick={this.goToMainPage} 
+                        className={'navBarButton'}>
+                        Login
+                        </button>
+
+                        <button
+                        onClick={this.goToMainPage} 
+                        className={'navBarButton'}>
+                        About Us
+                        </button>
+
+                        <button
+                        onClick={this.goToTestComponents} 
+                        className={'navBarButton'}>
+                        Test Components
+                        </button>
+
+                        <button
+                        onClick={this.goToCounter} 
+                        className={'navBarButton'}>
+                            Counter
+                        </button>
+
+                        
+                    </nav>
                 </div>
-                <nav id='navLinks'>
-
-                    <button
-                     onClick={this.goToGetStarted} 
-                     className={'navBarButton'}>
-                     Get Started
-                    </button>
-
-                    <button
-                     onClick={this.goToMainPage} 
-                     className={'navBarButton'}>
-                     Login
-                    </button>
-
-                    <button
-                     onClick={this.goToMainPage} 
-                     className={'navBarButton'}>
-                     About Us
-                    </button>
-
-                    <button
-                     onClick={this.goToTestComponents} 
-                     className={'navBarButton'}>
-                     Test Components
-                    </button>
-
-                    <button
-                     onClick={this.goToCounter} 
-                     className={'navBarButton'}>
-                         Counter
-                    </button>
-
-                    
-                </nav>
+                {/* <div className='divider'></div> */}
             </div>
         );
     }

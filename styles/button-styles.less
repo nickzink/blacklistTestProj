@@ -10,8 +10,8 @@
     padding: 8px 10px 8px 10px;
     margin:0 15px 0px 0;
     border-radius: .7rem;
-    border: 2px solid @base;
-    background: @base;
+    border: 2px solid @baseTransparent;
+    background: @baseTransparent;
     z-index: 100;
     cursor: pointer;
     &:hover {
@@ -23,9 +23,33 @@
     }
 }
 
-.getStartedButton {
+.getStartedPageButton {
     padding: 15px 20px 15px 20px;
+    width: 230px;
+    height: 110px;
+    font-size: 19px;
+    border: 4px solid @navyBlueHover;
+    z-index: 1;
+    background: @navyBlue;
+    color: white;
+    // pointer-events: none;
+    cursor: pointer;
+    &:hover {
+        background: @navyBlueHover;
+    }
+    &:focus {
+        background: @navyBlueHover;
+    }
+}
 
+.getStartedButton {
+    background: @navyBlue;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 25px 8px 25px;
+    &:hover {
+        background: @navyBlueHover;
+    }
 }
 
 .counterButton {
@@ -39,6 +63,8 @@
 	background: -o-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
 	background: -ms-linear-gradient(top, rgba(130,200,160,1) 0%, rgba(130,199,158,1) 100%);
 	background: linear-gradient(to bottom, rgba(130,200,160,1) 0%, rgba(124, 185, 149, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c8a0', endColorstr='#82c79e', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c8a0', endColorstr='#82c79e', GradientType=0 );
+    z-index: 1;
+
 }
 

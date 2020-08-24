@@ -2,12 +2,17 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import './styles.less';
 import WaveDivider from '../../components/WaveDivider'
+import '../../styles/button-styles.less';
 
 class preGetStarted extends React.Component {
     constructor(props) {
         super(props);
     }
 
+     
+    getStarted = (option) => {
+        this.props.router.push("/getStarted");
+    }
 
     render() {
         return(
@@ -20,8 +25,8 @@ class preGetStarted extends React.Component {
                 <div className='pageMain'>
                     <div className='getStartedCol' id='col1'>
                         <button
-                            onClick={this.goToCounter} 
-                            className={'navBarButton getStartedButton'}>
+                            onClick={this.getStarted(1)} 
+                            className={'navBarButton getStartedPageButton'}>
                             I already know which <br />
                             college I want to attend
                         </button>
@@ -32,8 +37,8 @@ class preGetStarted extends React.Component {
                     </div>
                     <div className='getStartedCol' id='col2'>
                         <button
-                            onClick={this.goToCounter} 
-                            className={'navBarButton getStartedButton'}>
+                            onClick={this.getStarted(2)} 
+                            className={'navBarButton getStartedPageButton'}>
                             I am still considering<br />
                             my options
                         </button>

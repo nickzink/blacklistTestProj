@@ -1,13 +1,17 @@
 @navHeight: 60px;
 
-#navbar {
+#navBar {
+    width: 100%;
+}
+#actualNavBar {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     // height: fixed;
-    background: @base;
+    background: @baseTransparent;
     height: @navHeight;
+    z-index: 100;
     // opacity: 70%;
 }
 
@@ -16,14 +20,19 @@
     float:left;
     display:block;
     height: @navHeight;
-    outline: 1px solid pink;
+    outline: 1px solid black;
 }
 
 #navLinks {
     float:right;
     height: @navHeight;
     width: 69%;
-    outline: 1px solid grey;
     position: relative;
+}
+#divider {
+    height: 5px;
+    background: black;
+    position:relative;
+    width:100%;
 }
 
