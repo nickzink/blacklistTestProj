@@ -1,0 +1,45 @@
+What components will we need and should they 
+be dumb components (functional, no hooks) or 
+stateful components (with useState hook or state property)
+
+dumb components:
+
+
+stateful components:
+
+
+
+not sure:
+
+
+
+-navbar and sidebar
+    -sidebar toggle
+    -logo
+    -navigation
+
+
+-footer
+
+-form
+-buttons
+-logo 
+-sidebar
+-backdrop/modal?
+
+
+
+State: what data will we need to use and 
+manipulate in our app
+
+-user inputs e.g.
+    -what is the users budget
+    -where would the user like to study (which state or city for example)
+    -which field would they like to study in
+
+
+What pages will we need:
+    -Main page
+    -Get user info page
+    -show results page
+

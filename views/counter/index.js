@@ -52,7 +52,6 @@ class CounterView extends React.Component {
 
 const mapStateToProps = state => ({
     counter: state.counter.value,
-    user: state.currentUser
 });
 
 const mapDispatchToProps = {

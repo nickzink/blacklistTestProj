@@ -35,7 +35,7 @@ class navBar extends React.Component {
     render() {
         return (
             <div id='navbar'>
-                <div id='actualNavBar'>
+                <div id='navBarLayout'>
                     <div id='logoContainer'>
                         <Logo onClick={this.goToMainPage}/>
                     </div>
@@ -47,17 +47,17 @@ class navBar extends React.Component {
                         Get Started
                         </button>
 
-                        <button
+                        {/* <button
                         onClick={this.goToMainPage} 
                         className={'navBarButton'}>
                         Login
-                        </button>
+                        </button> */}
 
-                        <button
+                        {/* <button
                         onClick={this.goToMainPage} 
                         className={'navBarButton'}>
                         About Us
-                        </button>
+                        </button> */}
 
                         <button
                         onClick={this.goToTestComponents} 

@@ -12,6 +12,15 @@ layout has all static components (navbar/sidebar/footer)
 
 start making components that could be useful such as sliders, dropdown, searchbar, sleek buttons
 
-How to add img?
+How to add static img and scale them based on device
 
 less font-family not working
+
+type ahead
+
+map component (future)
+
+!Important: app must be scalable and work on mobile
+
+Css modules
+

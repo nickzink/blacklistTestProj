@@ -23,13 +23,13 @@ class getStarted extends React.Component {
 
     render() {
         return(
-            <div className='pageWrapper'>
-                <div className='pageHeader'>
-                    <div className='mainHead'>What is your plan for college?</div>
-                    <div className='subHead'>Not sure?<br />Do some exploring and find the right fit for your situation!</div>
+            <div className='getStartedPageWrapper'>
+                <div className='getStartedPageHeader'>
+                    <div className='getStartedMainHead'>What is your plan for college?</div>
+                    <div className='getStartedSubHead'>Not sure?<br />Do some exploring and find the right fit for your situation!</div>
                 </div>
-                <div className='pageMain'>
-                    <div className='formWrapper'>
+                <div className='getStartedPageMain'>
+                    <div className='getStartedFormWrapper'>
                         <Form
                         className="getStartedForm"
                         // labelCol={{

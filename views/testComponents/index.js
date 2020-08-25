@@ -4,14 +4,16 @@ import Button from '../../components/Button';
 import { withRouter } from 'next/router';
 import './styles.less';
 import Slider from '../../components/Slider';
+import FormInput from '../../components/FormInput'
 import { Select } from "antd";
 // import 'antd/dist/antd.css';
-
+const Option = Select.Option;
 
 class testComponents extends React.Component {
     
     constructor(props) {
         super(props);
+        this.state = {}
     }
 
     componentDidMount() {
@@ -37,14 +39,18 @@ class testComponents extends React.Component {
                     max={1000} />
             </div>
             <div id='dropDown'>
-                {/* <Select
+                <Select
                     placeholder="Gender"
                     allowClear
                 >
                     <Option value="male">male</Option>
                     <Option value="female">female</Option>
                     <Option value="other">other</Option>
-                </Select> */}
+                </Select>
+            </div>
+
+            <div id="testFormInput"> 
+                <FormInput inputType="slider"/>
             </div>
 
                 

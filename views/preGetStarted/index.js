@@ -10,22 +10,22 @@ class preGetStarted extends React.Component {
     }
 
      
-    getStarted = (option) => {
+    getStarted = () => {
         this.props.router.push("/getStarted");
     }
 
     render() {
         return(
-            <div className='pageWrapper'>
-                <div className='pageHeader'>
-                    <div className='mainHead'>Before we get started</div>
+            <div className='preGetStartedPageWrapper'>
+                <div className='preGetStartedPageHeader'>
+                    <div className='preGetStartedMainHead'>One thing before we get started</div>
                     {/* <div className='subHead'>Not sure?<br />Do some exploring and find the right fit for your situation!</div> */}
                 </div>
                 <WaveDivider />
-                <div className='pageMain'>
-                    <div className='getStartedCol' id='col1'>
+                <div className='preGetStartedPageMain'>
+                    <div className='preGetStartedCol' id='col1'>
                         <button
-                            onClick={this.getStarted(1)} 
+                            onClick={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
                             I already know which <br />
                             college I want to attend
@@ -35,9 +35,9 @@ class preGetStarted extends React.Component {
                             college I want to attend
                         </div> */}
                     </div>
-                    <div className='getStartedCol' id='col2'>
+                    <div className='preGetStartedCol' id='col2'>
                         <button
-                            onClick={this.getStarted(2)} 
+                            onClick={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
                             I am still considering<br />
                             my options
