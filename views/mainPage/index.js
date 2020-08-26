@@ -15,10 +15,6 @@ class MainPage extends React.Component {
     componentDidMount() {
     }
 
-    goToCounter = () => {
-        this.props.router.push("/counter");
-    };
-
     render() {
       return(
         <div id='mainPageWrapper'>
@@ -31,5 +27,5 @@ class MainPage extends React.Component {
     }
 }
 
-export default withRouter(MainPage);
+export default MainPage;
   

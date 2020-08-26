@@ -26,7 +26,7 @@ class foot extends React.Component {
         return (
             <div id='mainPageFooter'>
 
-                <div className='footerSection' id='sectionOne'>
+                <div className='footerSection'>
 
                     <div className='footerCol'>
                         placeholer
@@ -54,9 +54,9 @@ class foot extends React.Component {
                 </nav> */}
 
                 
-                <hr className='footerDivider'></hr>
+                <div className='footerDivider'></div>
                 {/* Sub footer at very bottom possible for copyright/T&C/T&S/Privacy policy */}
-                <div className ='footerSection' id='sectionTwo'>
+                <div className ='footerSection'>
                     <div className='footerColInfo' id='socialMediaLinks'>
                         Social media links here
                     </div>                                

@@ -9,15 +9,15 @@ import { Select } from "antd";
 // import 'antd/dist/antd.css';
 const Option = Select.Option;
 
-class testComponents extends React.Component {
+class TestComponents extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {};
     }
 
     componentDidMount() {
-    }
+    };
 
     goToHome = () => {
         this.props.router.push("/mainPage");
@@ -29,16 +29,18 @@ class testComponents extends React.Component {
         <div id='testPageWrapper'>
             
         
-            <div id='button'>
-                <Button text='antd button'></Button>
+            <div className={"testcomponent"} id='tc-button-container'>
+                <Button>Click me</Button>
             </div>
 
-            <div id='slider'>
+            <div className={"testcomponent"} id='tc-slider-container'>
                 <Slider
                     min={0}
-                    max={1000} />
+                    max={75000}
+                    step={5000}
+                    label={"What's your college budget?"} />
             </div>
-            <div id='dropDown'>
+            <div className={"testcomponent"} id='tc-dropdown-container'>
                 <Select
                     placeholder="Gender"
                     allowClear
@@ -49,8 +51,13 @@ class testComponents extends React.Component {
                 </Select>
             </div>
 
-            <div id="testFormInput"> 
-                <FormInput inputType="slider"/>
+            <div className={"tc-forminput-container testcomponent"}> 
+                <FormInput 
+                    inputtype={"slider"}
+                    min={0}
+                    max={75000}
+                    step={5000}
+                    label={"What's your college budget?"} />
             </div>
 
                 
@@ -62,5 +69,5 @@ class testComponents extends React.Component {
     }
 }
 
-export default withRouter(testComponents);
+export default withRouter(TestComponents);
   

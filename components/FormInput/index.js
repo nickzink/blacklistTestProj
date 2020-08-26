@@ -1,32 +1,32 @@
-const { render } = require("less");
-const { Dropdown, Select, Slider, Input } = require("antd");
+const { Dropdown, Input } = require("antd");
+import Slider from '../../components/Slider';
 import './styles.less'
+import Select from '../../components/Select';
 import PropTypes from 'prop-types';
 
 
 const FormInput = (props) => {
 
-    this.state = {}
-
-    let inputElem;
+    let inputElem = null;
     console.log(props);
-    switch(props.inputType) {
+    switch(props.inputtype) {
         case ('input'):
-            inputElem = <Input className='inputElem' {...props}/>
+            inputElem = <Input className='formInputField' {...props}/>
+            break;
         case ('select'):
-            inputElem = <Select className='inputElem' {...props}/>
+            inputElem = <Select className='formInputSelect' {...props}/>
+            break;
         case ('slider'):
-            inputElem = <Slider className='inputElem' {...props}/> 
+            inputElem = <Slider className='formInputSlider' {...props}/>
+            break;
         case ('typeAhead'):
             // inputElem = < {...props}/> 
-        default:
-            inputElem = <Input className='inputElem' {...props}/>
     }
 
 
     return(
         <div className={'inputItem'}>
-            <label>
+            <label className='inputItemLabel'>
                 {props.label}
             </label>
             {inputElem}
@@ -36,7 +36,7 @@ const FormInput = (props) => {
 }
 
 FormInput.propTypes = {
-    type: PropTypes.string.isRequired
+    inputtype: PropTypes.string.isRequired
 }
 
 export default FormInput;

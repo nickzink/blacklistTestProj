@@ -2,28 +2,29 @@
     border:1px solid lightgrey;
     background:@base;
     color:black;
+    display:flex;
+    flex-direction: column;
 }
 
 .footerDivider {
-    color:lightgrey;
-    margin-top:20px;
+    background:darkgray;
     margin-bottom:20px;
+    height:1px;
+    width:100%;
 
 }
 
 .footerSection {
+    display: flex;
     text-align:center;
     margin:0px;
     width:100%;
     padding:0px;
     height:100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
+    padding-bottom:20px;
 }
 
 #sectionOne {
@@ -37,7 +38,6 @@
 
 .footerCol {
     padding-top: 5px;
-    list-style-type:none;
     width:inherit;
     margin:10px;
     border: 1px solid blue;

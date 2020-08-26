@@ -1,16 +1,15 @@
 import React from "react";
 import { Button } from 'antd';
-import "../../styles/button-styles.less";
 
 
 
-const button = ({onClick, className, text}) => {
+const button = (props) => {
     return (
-        <Button
-                onClick={onClick} 
-                className={className}>
-                    {text}
-        </Button>
+        <button
+                onClick={props.clicked} 
+                className={props.className}>
+                    {props.children}
+        </button>
     );
 }
 

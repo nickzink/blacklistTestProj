@@ -24,12 +24,12 @@ class CounterView extends React.Component {
         return (
             <div>
                 <Button
-                     onClick={this.props.incrementCounter} 
+                     clicked={this.props.incrementCounter} 
                      className={'counterButton'}
                      text={"Increment"}>
                 </Button>
                 <Button
-                     onClick={this.props.decrementCounter} 
+                     clicked={this.props.decrementCounter} 
                      className={'counterButton'}
                      text={'Decrement'}>
                 </Button>
@@ -37,7 +37,7 @@ class CounterView extends React.Component {
                 <h1 className="countNumber">{this.props.counter}</h1>
 
                 <Button
-                     onClick={this.goToMainPage} 
+                     clicked={this.goToMainPage} 
                      className={'counterButton'}
                      text={"Back to menu"}>
                 </Button>

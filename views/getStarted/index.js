@@ -1,23 +1,14 @@
 import React from 'react';
 import { withRouter } from 'next/router';
-import {
-    Form,
-    Input,
-    Button,
-    Radio,
-    Select,
-    Cascader,
-    DatePicker,
-    InputNumber,
-    TreeSelect,
-    Switch,
-  } from 'antd';
+import {Form} from 'antd';
 import '../../styles/form-elements.less';
 import './styles.less';
+import FormInput from '../../components/FormInput';
 
 class getStarted extends React.Component {
     constructor(props) {
         super(props);
+        this.optionsList = ["Bachelors degree", "Master's degree", "PhD"]
     }
 
 
@@ -35,19 +26,23 @@ class getStarted extends React.Component {
                         // labelCol={{
                         //     span: ,
                         //   }}
-                          wrapperCol={{
-                            span: 10,
-                          }}
+                        //   wrapperCol={{
+                        //     span: ,
+                        //   }}
                           layout="vertical"
                           >
-                            <Form.Item label="What type of degree are you trying to achieve" className='formItem'>
-                            <Select>
-                                <Select.Option value="Bachelor's Degree">Bachelor's Degree</Select.Option>
-                                <Select.Option value="Master's Degree">Master's Degree</Select.Option>
-                                <Select.Option value="PhD">PhD</Select.Option>
-
-                            </Select>
-                            </Form.Item>
+                            <FormInput label="Which type of degree are you trying to achieve:"
+                                    inputtype='select'
+                                    placeholder={'Choose an option'}
+                                    options={this.optionsList} 
+                                    />
+                            <FormInput label="What is your annual college budget:"
+                                    inputtype='slider'
+                                    min={0}
+                                    max={75000}
+                                    step={5000}
+                                    labelClass={'getStartedLabel'}
+                                    tooltipVisible={true} />
                         </Form>
                     </div>
                 </div>

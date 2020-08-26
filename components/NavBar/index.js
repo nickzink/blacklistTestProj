@@ -4,7 +4,7 @@ import Logo from '../Logo';
 import Button from '../Button';
 import { withRouter } from "next/router";
 
-class navBar extends React.Component {
+class NavBar extends React.Component {
 
     constructor(props) {
         super(props);
@@ -22,6 +22,7 @@ class navBar extends React.Component {
     }
 
     goToTestComponents = () => {
+        console.log("huh");
         this.props.router.push("/testComponents");
     }
     goToGetStarted = () => {
@@ -41,11 +42,11 @@ class navBar extends React.Component {
                     </div>
                     <nav id='navLinks'>
 
-                        <button
-                        onClick={this.goToGetStarted} 
+                        <Button
+                        clicked={this.goToGetStarted} 
                         className={'navBarButton getStartedButton'}>
                         Get Started
-                        </button>
+                        </Button>
 
                         {/* <button
                         onClick={this.goToMainPage} 
@@ -59,17 +60,17 @@ class navBar extends React.Component {
                         About Us
                         </button> */}
 
-                        <button
-                        onClick={this.goToTestComponents} 
+                        <Button
+                        clicked={this.goToTestComponents} 
                         className={'navBarButton'}>
                         Test Components
-                        </button>
+                        </Button>
 
-                        <button
-                        onClick={this.goToCounter} 
+                        <Button
+                        clicked={this.goToCounter} 
                         className={'navBarButton'}>
                             Counter
-                        </button>
+                        </Button>
 
                         
                     </nav>
@@ -82,4 +83,4 @@ class navBar extends React.Component {
 
 
 }
-export default withRouter(navBar);
+export default withRouter(NavBar);

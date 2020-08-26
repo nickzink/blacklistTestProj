@@ -3,7 +3,8 @@ import React from 'react';
 import {wrapper} from '../redux/store';
 import Router from "next/router";
 import '../styles/blacklist-theme.less';
-import 'antd/dist/antd.css';
+import '../styles/button-styles.less';
+// import 'antd/dist/antd.css';
 
 
 
@@ -11,8 +12,6 @@ import 'antd/dist/antd.css';
 class MyApp extends App {
 
     static getInitialProps = async ({Component, ctx}) => {
-
-        ctx.store.dispatch({type: 'TOE', payload: 'was set in _app'});
 
         return {
             pageProps: {

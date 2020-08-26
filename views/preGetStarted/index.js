@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import './styles.less';
 import WaveDivider from '../../components/WaveDivider'
-import '../../styles/button-styles.less';
+import Button from '../../components/Button';
 
 class preGetStarted extends React.Component {
     constructor(props) {
@@ -24,24 +24,24 @@ class preGetStarted extends React.Component {
                 <WaveDivider />
                 <div className='preGetStartedPageMain'>
                     <div className='preGetStartedCol' id='col1'>
-                        <button
-                            onClick={this.getStarted} 
+                        <Button
+                            clicked={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
                             I already know which <br />
                             college I want to attend
-                        </button>
+                        </Button>
                         {/* <div className='chooseStart'>
                             I already know which <br />
                             college I want to attend
                         </div> */}
                     </div>
                     <div className='preGetStartedCol' id='col2'>
-                        <button
-                            onClick={this.getStarted} 
+                        <Button
+                            clicked={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
                             I am still considering<br />
                             my options
-                        </button>
+                        </Button>
                         {/* <div className='chooseStart'>
                             I am still considering<br />
                             my options
