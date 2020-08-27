@@ -1,17 +1,18 @@
 @navHeight: 60px;
 
-#navBar {
+#navbar {
     width: 100%;
+    background: @baseTransparent;
+    height: @navHeight;
+    z-index: 100;
 }
 #navBarLayout {
     display:flex;
+    flex-direction: row;
     width: 100%;
     // top: 0;
     // left: 0;
     // height: fixed;
-    background: @baseTransparent;
-    height: @navHeight;
-    z-index: 100;
     justify-content: space-between;
 
     // opacity: 70%;
@@ -19,15 +20,17 @@
 
 #logoContainer {
     display: flex;
-    order: 0;
+    order: -1;
     height: @navHeight;
-    outline: 1px solid pink;
 }
 
 #navLinks {
-    float:right;
     height: @navHeight; 
     width: 69%;
+    order: 0;
+}
+.getStartedButton {
+    order:1;
 }
 #divider {
     height: 5px;
@@ -35,4 +38,15 @@
     width:100%;
 }
 
+
+@media screen and (max-width: 600px) {
+
+    #navLinks {
+        display:none;
+    }
+    #navbarLayout {
+        // transform: scale(0.1);
+    }
+    
+}
 

@@ -4,6 +4,7 @@ import {wrapper} from '../redux/store';
 import Router from "next/router";
 import '../styles/blacklist-theme.less';
 import '../styles/button-styles.less';
+import '../styles/globals.css';
 // import 'antd/dist/antd.css';
 
 

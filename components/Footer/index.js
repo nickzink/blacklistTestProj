@@ -29,16 +29,19 @@ class foot extends React.Component {
                 <div className='footerSection'>
 
                     <div className='footerCol'>
+                        <div className='footerColTitle'>DriveFi</div>
+                        <div className='footerColInfo'>Transform your student debt into retirement savings!</div>
+
+                        
+                    </div>
+
+                    {/* <div className='footerCol'>
                         placeholer
                     </div>
 
                     <div className='footerCol'>
                         placeholer
-                    </div>
-
-                    <div className='footerCol'>
-                        placeholer
-                    </div>
+                    </div> */}
 
                     <div className='footerCol'>
                         <div className='footerColTitle'>Contact</div>
@@ -58,12 +61,8 @@ class foot extends React.Component {
                 {/* Sub footer at very bottom possible for copyright/T&C/T&S/Privacy policy */}
                 <div className ='footerSection'>
                     <div className='footerColInfo' id='socialMediaLinks'>
-                        Social media links here
+                        <img className='socialButtonsPlaceholder' src='https://bootstrapious.com/ck_resources/img/image(89).png' />
                     </div>                                
-
-                    <div  id='formalities'>
-                            T&C etc here
-                    </div>
                     <div className='footerColInfo' id='logoContainer'>
                             <Logo onClick={this.goToMainPage}/>
                     </div>

@@ -40,13 +40,8 @@ class NavBar extends React.Component {
                     <div id='logoContainer'>
                         <Logo onClick={this.goToMainPage}/>
                     </div>
+                    
                     <nav id='navLinks'>
-
-                        <Button
-                        clicked={this.goToGetStarted} 
-                        className={'navBarButton getStartedButton'}>
-                        Get Started
-                        </Button>
 
                         {/* <button
                         onClick={this.goToMainPage} 
@@ -62,17 +57,22 @@ class NavBar extends React.Component {
 
                         <Button
                         clicked={this.goToTestComponents} 
-                        className={'navBarButton'}>
+                        className={'navBarButton navBarButtonDisapear'}>
                         Test Components
                         </Button>
 
                         <Button
                         clicked={this.goToCounter} 
-                        className={'navBarButton'}>
+                        className={'navBarButton navBarButtonDisapear'}>
                             Counter
                         </Button>
-
-                        
+                    </nav>
+                    <nav id='getStartedButton'>
+                        <Button
+                            clicked={this.goToGetStarted} 
+                            className={'navBarButton getStartedButton'}>
+                            Get Started
+                        </Button>
                     </nav>
                 </div>
                 {/* <div className='divider'></div> */}
