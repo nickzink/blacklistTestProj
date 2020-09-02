@@ -18,7 +18,7 @@ class preGetStarted extends React.Component {
         return(
             <div className='preGetStartedPageWrapper'>
                 <div className='preGetStartedPageHeader'>
-                    <div className='preGetStartedMainHead'>One thing before we get started</div>
+                    <div className='preGetStartedMainHead'>Before we get started!</div>
                     {/* <div className='subHead'>Not sure?<br />Do some exploring and find the right fit for your situation!</div> */}
                 </div>
                 <WaveDivider />
@@ -27,8 +27,7 @@ class preGetStarted extends React.Component {
                         <Button
                             clicked={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
-                            I already know which <br />
-                            college I want to attend
+                            I know which college I want to attend
                         </Button>
                         {/* <div className='chooseStart'>
                             I already know which <br />
@@ -39,8 +38,7 @@ class preGetStarted extends React.Component {
                         <Button
                             clicked={this.getStarted} 
                             className={'navBarButton getStartedPageButton'}>
-                            I am still considering<br />
-                            my options
+                            I don't know which college I want to attend
                         </Button>
                         {/* <div className='chooseStart'>
                             I am still considering<br />

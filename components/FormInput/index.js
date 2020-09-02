@@ -1,14 +1,15 @@
-const { Dropdown, Input } = require("antd");
+const { Input } = require("antd");
 import Slider from '../../components/Slider';
 import './styles.less'
 import Select from '../../components/Select';
 import PropTypes from 'prop-types';
+import MultiSelectionList from '../MultiSelect';
 
 
 const FormInput = (props) => {
 
     let inputElem = null;
-    console.log(props);
+    // console.log(props);
     switch(props.inputtype) {
         case ('input'):
             inputElem = <Input className='formInputField' {...props}/>
@@ -18,6 +19,9 @@ const FormInput = (props) => {
             break;
         case ('slider'):
             inputElem = <Slider className='formInputSlider' {...props}/>
+            break;
+        case ('multiselect'):
+            inputElem = <MultiSelectionList className='formInputMultiSelect' {...props}/>
             break;
         case ('typeAhead'):
             // inputElem = < {...props}/> 
