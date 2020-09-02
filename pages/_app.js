@@ -5,6 +5,8 @@ import Router from "next/router";
 import '../styles/blacklist-theme.less';
 import '../styles/button-styles.less';
 import '../styles/globals.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import 'antd/dist/antd.css';
 
 

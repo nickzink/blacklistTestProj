@@ -7,10 +7,10 @@ import thunk from 'redux-thunk'
 
 
 
-// const makeStore = (context) => createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)));
-const makeStore = (context) => createStore(rootReducer);
+const makeStore = (context) => createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)));
+// const makeStore = (context) => createStore(rootReducer);
 
-const store = createWrapper(makeStore, {debug: false});
+const store = createWrapper(makeStore, {debug: true});
 
 export const wrapper = store;
 
